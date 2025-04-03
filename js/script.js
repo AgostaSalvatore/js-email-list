@@ -6,3 +6,7 @@ const emailList = document.getElementById("email-list");
 let items = 10;
 const endpoint = `https://flynn.boolean.careers/exercises/api/random/mail?items=${items}`;
 
+axios.get(endpoint).then((response) => {
+    console.log(response.data.response);
+
+});
